@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora &#x1F63C;</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <div id="calculadora">
+            <div class="display">
+                <label for="displayNumeros">⠀</label>
+                <input type="number" id="displayNumeros">
+            </div>
+            <div class="operadores">
+                <input type="button" value="+" id="mais" class="operador">
+                <input type="button" value="-" id="menos" class="operador">
+                <input type="button" value="x" id="vezes" class="operador">
+                <input type="button" value="/" id="divisao" class="operador">
+            </div>
+            <div class="numeros">
+                <input type="button" value="1" id="um" class="numero">
+                <input type="button" value="2" id="dois" class="numero">
+                <input type="button" value="3" id="tres" class="numero">
+                <input type="button" value="4" id="quatro" class="numero">
+                <input type="button" value="5" id="cinco" class="numero">
+                <input type="button" value="6" id="seis" class="numero">
+                <input type="button" value="7" id="sete" class="numero">
+                <input type="button" value="8" id="oito" class="numero">
+                <input type="button" value="9" id="nove" class="numero">
+                <input type="button" value="0" id="zero" class="numero">
+            </div>
+            <div class="resultadoClear">
+                <input type="button" value="=" id="igual">
+                <input type="button" value="C" id="clear">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Calculadora feita por Michel Filho</p>
+    </footer>
+
+    <script src="detectaInput.js"></script>
+    <script src="clear.js"></script>
+    <script src="calcular.js"></script>
+
+</body>
+</html>

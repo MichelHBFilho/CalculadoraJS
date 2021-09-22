@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    background-color: #DED9D9;
+    zoom: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.363);
+    margin-bottom: 10px;
+}
+
+header > h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+#calculadora {
+    margin: auto;
+    width: 215px;
+    padding: 10px;
+    background-color: #5E5C5C;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+#displayNumeros {
+    height: 30px;
+    width: calc(100% - 7px);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+label[for="displayNumeros"] {
+    height: 20px;
+    color: white;
+}
+
+.numeros {
+    margin: 5px 0;
+    width: 200px;
+}
+
+.numero {
+    margin: 3px 0;
+}
+
+#zero {
+    margin: 5px 0;
+    width: 158px;
+}
+
+.operadores {
+    margin-top: 10px;
+}
+
+#igual {
+    position: absolute;
+    right: 13px;
+    top: calc(111.8px + 21.5px);
+    height: 163px;
+}
+
+#clear {
+    position: absolute;
+    right: 13px;
+    top: calc(108.8px + 150px + 44.5px);
+    background-color: #DE9797;
+}
+
+input[type=button] {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #DED9D9;
+}
+
+input[type=button]:hover, #clear:hover {
+    background-color: #A46F6F;
+    transition-duration: 0.8s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 0.6em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.esmaecer {
+    color: rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+}
+
+.sumir {
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
